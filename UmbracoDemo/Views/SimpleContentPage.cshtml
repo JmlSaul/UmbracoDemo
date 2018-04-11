@@ -11,3 +11,9 @@
 		</section>	
 	</div> <!-- #main -->
 </div> <!-- #main-container -->
+
+@{
+    Html.RenderPartial("~/Views/Partials/ContactForm.cshtml", new UmbracoDemo.Models.ContactFormViewModel(){Name="AA"});
+}
+
+@Umbraco.RenderMacro("contactForm")
